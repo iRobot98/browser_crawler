@@ -1,0 +1,1 @@
+taskkill -im node.exe -im sass.exe -im chrome.exe -im cmd.exe -f

@@ -6,9 +6,16 @@ import express from "express";
 
 import { Log, RequestLog } from "./utils/utils_001";
 import router from "./routes";
+import path from "path";
+
+import open from "open";
 
 const app = express();
 app.use(RequestLog);
 const port = 450;
 app.use(router);
-app.listen(port, () => Log(`listening on: ${port}`));
+
+app.use("/", express.static(path.resolve("./views")));
+app.listen(port, () =>
+  Log(`listening on: ${port}`).then(() => open(`http://localhost:${port}/`))
+);
