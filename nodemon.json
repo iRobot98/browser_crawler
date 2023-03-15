@@ -1,0 +1,4 @@
+{
+  "delay": 1000,
+  "ignore": ["*.ts", "*.txt", "node_modules", "types"]
+}

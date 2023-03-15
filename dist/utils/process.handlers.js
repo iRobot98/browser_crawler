@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const utils_001_1 = require("./utils_001");
+process.on("uncaughtException", (e) => {
+    (0, utils_001_1.ErrorLog)((0, utils_001_1.stringify)(e));
+});
+process.on("unhandledRejection", (e) => {
+    (0, utils_001_1.ErrorLog)((0, utils_001_1.stringify)(e));
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHJvY2Vzcy5oYW5kbGVycy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uL3V0aWxzL3Byb2Nlc3MuaGFuZGxlcnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwyQ0FBa0Q7QUFFbEQsT0FBTyxDQUFDLEVBQUUsQ0FBQyxtQkFBbUIsRUFBRSxDQUFDLENBQVEsRUFBRSxFQUFFO0lBQzNDLElBQUEsb0JBQVEsRUFBQyxJQUFBLHFCQUFTLEVBQUMsQ0FBQyxDQUFDLENBQUMsQ0FBQztBQUN6QixDQUFDLENBQUMsQ0FBQztBQUVILE9BQU8sQ0FBQyxFQUFFLENBQUMsb0JBQW9CLEVBQUUsQ0FBQyxDQUFNLEVBQUUsRUFBRTtJQUMxQyxJQUFBLG9CQUFRLEVBQUMsSUFBQSxxQkFBUyxFQUFDLENBQUMsQ0FBQyxDQUFDLENBQUM7QUFDekIsQ0FBQyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBzdHJpbmdpZnksIEVycm9yTG9nIH0gZnJvbSBcIi4vdXRpbHNfMDAxXCI7XHJcblxyXG5wcm9jZXNzLm9uKFwidW5jYXVnaHRFeGNlcHRpb25cIiwgKGU6IEVycm9yKSA9PiB7XHJcbiAgRXJyb3JMb2coc3RyaW5naWZ5KGUpKTtcclxufSk7XHJcblxyXG5wcm9jZXNzLm9uKFwidW5oYW5kbGVkUmVqZWN0aW9uXCIsIChlOiBhbnkpID0+IHtcclxuICBFcnJvckxvZyhzdHJpbmdpZnkoZSkpO1xyXG59KTtcclxuXHJcbmV4cG9ydCB7fTtcclxuIl19
