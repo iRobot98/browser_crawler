@@ -1,4 +1,4 @@
-/// <reference types="qs" />
+﻿/// <reference types="qs" />
 import express from "express";
 export declare const removeDuplicates: (...args: any[]) => string[];
 export declare const stringify: (line: any, depth?: number) => string;

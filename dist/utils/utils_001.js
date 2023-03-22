@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DataLog = exports.RequestLog = exports.ErrorLog = exports.Log = exports.stringify = exports.removeDuplicates = void 0;
 const tslib_1 = require("tslib");

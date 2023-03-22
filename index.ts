@@ -12,10 +12,18 @@ import open from "open";
 
 const app = express();
 app.use(RequestLog);
-const port = 450;
+const port_ = 4500;
 app.use(router);
 
-app.use("/", express.static(path.resolve("./views")));
-app.listen(port, () =>
-  Log(`listening on: ${port}`).then(() => open(`http://localhost:${port}/`))
+app.use(
+  "/",
+  express.static(path.resolve("./views"), {
+    cacheControl: true,
+    maxAge: "3600000",
+  })
+);
+app.listen(port_, () =>
+  Log(`listening on: ${port_}`).then(() => {
+    // open(`http://localhost:${port_}/`);
+  })
 );

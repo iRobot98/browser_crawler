@@ -1,4 +1,5 @@
 {
   "delay": 1000,
-  "ignore": ["*.ts", "*.txt", "node_modules/", "types/", "assets/", "*.json"]
+  "ignore": ["*.ts", "*.txt", "node_modules/", "types/", "assets/", "*.json"],
+  "watch": ["dist"]
 }

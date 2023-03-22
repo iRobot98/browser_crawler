@@ -1,4 +1,4 @@
-export declare const store: {
+﻿export declare const store: {
     files: string[];
     dirs: string[];
 };
